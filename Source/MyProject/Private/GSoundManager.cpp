@@ -60,13 +60,9 @@ void AGSoundManager::WriteToCsv()
 
 		delete FileHandle;
 
-		FileHandle = FPlatformFileManager::Get().GetPlatformFile().OpenWrite(*FullPath);
-
 		// Save the updated value back to the file
 		FString NumberString = FString::Printf(TEXT("%d"), OutValue);
-		FileHandle->Write((const uint8*)NumberString.GetCharArray().GetData(), NumberString.Len());
-
-		delete FileHandle;
+		FFileHelper::SaveStringToFile(NumberString, *FullPath);
 	}
 
 
