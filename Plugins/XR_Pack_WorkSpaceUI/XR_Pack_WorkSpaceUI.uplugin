@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "XR_Pack_WorkSpaceUI",
+	"Description": "",
+	"Category": "Packages",
+	"CreatedBy": "Guilherme",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "XR_Pack_WorkSpaceUI",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
