@@ -29,3 +29,15 @@ private:
 	TArray<int> aPosition{};
 	FString fileName;
 };
+
+UCLASS()
+class YOURPROJECT_API AGSoundManager : public AActor
+{
+	GENERATED_BODY()
+
+public:
+	AGSoundManager();
+
+	UFUNCTION(BlueprintCallable, Category = "File")
+	void SaveArrayToFile(const TArray<FVector>& Positions, const FString& Filename);
+};
